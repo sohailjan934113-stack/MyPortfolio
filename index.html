@@ -1,326 +1,751 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sohail Ahmad | Professional Portfolio</title>
+    <title>Sohail Ahmad | Software Engineering Student & Developer</title>
 
-    <meta name="description" content="Sohail Ahmad's professional portfolio showcasing web development, digital marketing, graphic design and software projects.">
+    <meta name="description" content="Explore the portfolio of Sohail Ahmad, a Software Engineering student interested in Front-End Development, Digital Marketing and Graphic Design.">
+
+    <meta name="theme-color" content="#080808">
+
+    <meta property="og:title" content="Sohail Ahmad | Developer Portfolio">
+    <meta property="og:description" content="Explore my skills, services and software projects.">
+    <meta property="og:type" content="website">
 
     <link rel="stylesheet" href="style.css">
 </head>
-
+<script src="script.js"></script>
 <body>
+    
+<!-- Premium Loading Screen -->
+<div id="preloader">
+    <div class="loader-content">
+        <div class="loader-logo">SA<span>.</span></div>
+        <div class="loader-line"></div>
+        <p>WELCOME TO MY PORTFOLIO</p>
+        <span class="loading-text">Loading...</span>
+    </div>
+</div>
+
+
+    <!-- SCROLL PROGRESS -->
+    <div class="scroll-progress" id="scrollProgress"></div>
 
     <!-- HEADER -->
-   
-<!-- PROFESSIONAL HEADER -->
-<header class="main-header">
+    <header class="main-header">
 
-    <h2 class="logo">SOHAIL <span>AHMAD</span></h2>
+        <a href="#home" class="logo">SOHAIL<span>.</span></a>
 
-    <button class="menu-toggle"
-            id="menuToggle"
-            aria-label="Open navigation menu"
-            aria-expanded="false">
-        ☰
-    </button>
+        <nav id="navLinks" aria-label="Main navigation">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
-    <nav id="navLinks">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
+        <div class="header-actions">
+            <button id="themeToggle"
+                    class="theme-toggle"
+                    type="button"
+                    aria-label="Toggle theme">☀</button>
 
-</header>
+            <button class="menu-toggle"
+                    id="menuToggle"
+                    type="button"
+                    aria-label="Open menu"
+                    aria-expanded="false">☰</button>
+        </div>
+
+    </header>
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section id="home" class="hero">
+
+            <div class="hero-content reveal">
+
+                <p class="welcome-text">WELCOME TO MY PORTFOLIO</p>
+
+                <h1>
+                    Hi, I'm <span>Sohail Ahmad</span>
+                </h1>
+
+                <h2 class="typing-text">
+                    I'm a <span id="typing"></span>
+                </h2>
+
+                <p class="hero-description">
+                    I'm a passionate Software Engineering student
+                    interested in Front-End Web Development, Digital
+                    Marketing and Graphic Design.
+
+                    I enjoy creating modern, responsive and user-friendly
+                    digital experiences while continuously learning
+                    new technologies and improving my skills.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="btn">
+                        Explore My Work →
+                    </a>
+
+                    <a href="Sohail-Ahmad-CV.pdf"
+                       class="btn btn-outline"
+                       download>
+                        Download CV ↓
+                    </a>
+
+                </div>
+
+                <div class="hero-socials">
+
+                    <a href="https://github.com/sohailjan934113-stack"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        GitHub ↗
+                    </a>
+
+                    <a href="mailto:sohailjan934113@gmail.com">
+                        Email ↗
+                    </a>
+
+                </div>
+
+                <!-- HERO HIGHLIGHTS -->
+                <div class="hero-highlights">
+
+                    <div class="highlight-item">
+                        <h3>03+</h3>
+                        <p>Personal & University Projects</p>
+                    </div>
+
+                    <div class="highlight-item">
+                        <h3>05</h3>
+                        <p>Learning & Practicing Skills</p>
+                    </div>
+
+                    <div class="highlight-item">
+                        <h3>BS</h3>
+                        <p>Software Engineering</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="hero-image reveal">
+
+                <div class="image-frame">
+                    <img src="sohail.jpg"
+                         alt="Profile photograph of Sohail Ahmad">
+                </div>
+
+                <div class="image-label">
+                    Software Engineering Student
+                </div>
+
+            </div>
+
+        </section>
 
 
+        <!-- ABOUT SECTION -->
+        <section id="about" class="section reveal">
 
-    <!-- HOME SECTION -->
-    <section id="home">
+            <div class="section-heading">
 
-        <img src="sohail.jpg"
-             alt="Sohail Ahmad"
-             class="profile-photo">
+                <p class="section-tag">GET TO KNOW ME</p>
 
-        <h1>Hello, I'm <span>Sohail Ahmad</span></h1>
+                <h2>About <span>Me</span></h2>
 
-        <h3 class="typing-text">
-            I am a <span id="typing"></span>
-        </h3>
+                <p>Discover my background, interests and goals.</p>
 
-        <p>
-            Front-End Developer | Digital Marketer | Graphic Designer
-        </p>
+            </div>
 
-        <a href="#projects" class="btn">
-            View My Projects
-        </a>
+            <div class="about-container">
 
-        <a href="Sohail-Ahmad-CV.pdf" class="btn" download>
-            Download My CV
-        </a>
+                <div class="about-content">
 
-    </section>
+                    <h3>I'm <span>Sohail Ahmad</span></h3>
+
+                    <h4>Software Engineering Student & Aspiring Web Developer</h4>
+
+                    <p>
+                        My name is Sohail Ahmad. I am currently pursuing
+                        a Bachelor's degree in Software Engineering
+                        at Abasyn University Peshawar.
+                    </p>
+
+                    <p>
+                        I have practical experience with HTML, CSS
+                        and JavaScript through personal projects,
+                        including my Luxe Homes Real Estate Website.
+                    </p>
+
+                    <p>
+                        Alongside web development, I am interested
+                        in Digital Marketing and Graphic Design.
+                        I enjoy exploring creative ideas and
+                        learning new digital technologies.
+                    </p>
+
+                    <p>
+                        My goal is to become a skilled software
+                        developer, create useful digital solutions
+                        and continuously grow through learning
+                        and practical experience.
+                    </p>
+
+                    <a href="Sohail-Ahmad-CV.pdf"
+                       class="btn"
+                       download>
+                        Download My CV ↓
+                    </a>
+
+                </div>
+
+                <div class="about-details">
+
+                    <div class="info-card">
+
+                        <span class="card-icon">🎓</span>
+
+                        <h3>Education</h3>
+
+                        <p>BS Software Engineering</p>
+
+                        <small>Abasyn University Peshawar</small>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <span class="card-icon">💻</span>
+
+                        <h3>Interests</h3>
+
+                        <p>Web Development</p>
+                        <p>Digital Marketing</p>
+                        <p>Graphic Designing</p>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <span class="card-icon">🚀</span>
+
+                        <h3>Current Focus</h3>
+
+                        <p>
+                            Learning new technologies and
+                            building practical projects.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
 
 
-    <!-- ABOUT SECTION -->
-    
-<!-- ABOUT SECTION -->
-<section id="about">
+        <!-- SERVICES SECTION -->
+        <section id="services" class="section reveal">
 
-    <h2>About Me</h2>
+            <div class="section-heading">
 
-    <div class="about-container">
+                <p class="section-tag">WHAT I DO</p>
 
-        <div class="about-content">
+                <h2>My <span>Services</span></h2>
 
-            <h3>I'm <span>Sohail Ahmad</span></h3>
+                <p>My areas of interest and developing skills.</p>
 
-            <h4>Software Engineering Student & Web Developer</h4>
+            </div>
 
-            <p>
-                I am a passionate Software Engineering student
-                at Abasyn University Peshawar, with an interest
-                in technology and creative digital solutions.
+            <div class="services-container">
+
+                <article class="service-card">
+
+                    <span class="service-icon">🌐</span>
+
+                    <h3>Web Development</h3>
+
+                    <p>
+                        Creating responsive and user-friendly
+                        website interfaces using modern
+                        front-end technologies.
+                    </p>
+
+                    <span class="service-label">
+                        HTML • CSS • JavaScript
+                    </span>
+
+                </article>
+
+                <article class="service-card">
+
+                    <span class="service-icon">📈</span>
+
+                    <h3>Digital Marketing</h3>
+
+                    <p>
+                        Exploring digital marketing strategies,
+                        online promotion and brand awareness.
+                    </p>
+
+                    <span class="service-label">
+                        Digital Marketing
+                    </span>
+
+                </article>
+
+                <article class="service-card">
+
+                    <span class="service-icon">🎨</span>
+
+                    <h3>Graphic Designing</h3>
+
+                    <p>
+                        Developing creative visual concepts
+                        and exploring digital graphic design.
+                    </p>
+
+                    <span class="service-label">
+                        Graphic Design
+                    </span>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="section reveal">
+
+            <div class="section-heading">
+
+                <p class="section-tag">MY EXPERTISE</p>
+
+                <h2>My <span>Skills</span></h2>
+
+                <p>Technologies and creative skills I practice.</p>
+
+            </div>
+
+            <div class="skills-container">
+
+                <div class="skill-box">
+
+                    <div class="skill-info">
+                        <h3>HTML</h3>
+                        <span>85%</span>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="skill-progress html"></div>
+                    </div>
+
+                </div>
+
+                <div class="skill-box">
+
+                    <div class="skill-info">
+                        <h3>CSS</h3>
+                        <span>80%</span>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="skill-progress css"></div>
+                    </div>
+
+                </div>
+
+                <div class="skill-box">
+
+                    <div class="skill-info">
+                        <h3>JavaScript</h3>
+                        <span>65%</span>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="skill-progress javascript"></div>
+                    </div>
+
+                </div>
+
+                <div class="skill-box">
+
+                    <div class="skill-info">
+                        <h3>Digital Marketing</h3>
+                        <span>75%</span>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="skill-progress marketing"></div>
+                    </div>
+
+                </div>
+
+                <div class="skill-box">
+
+                    <div class="skill-info">
+                        <h3>Graphic Designing</h3>
+                        <span>70%</span>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="skill-progress designing"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <p class="skill-note">
+                Skill percentages are self-assessments.
+                They can be updated as my experience grows.
             </p>
 
-            <p>
-                I have experience working with HTML, CSS and
-                JavaScript through my personal project,
-                Luxe Homes Real Estate Website.
-            </p>
+        </section>
 
-            <p>
-                I am also interested in Digital Marketing
-                and Graphic Designing. I enjoy learning new
-                technologies, improving my skills and working
-                on creative projects.
-            </p>
 
-            <p>
-                My career goal is to become a professional
-                software developer and build useful,
-                modern and user-friendly applications.
-            </p>
+        <!-- EDUCATION SECTION -->
+        <section id="education" class="section reveal">
 
-            <a href="Sohail-Ahmad-CV.pdf"
-               class="btn"
-               download>
-                Download CV
-            </a>
+            <div class="section-heading">
 
-        </div>
+                <p class="section-tag">MY BACKGROUND</p>
 
-        <div class="about-details">
+                <h2>My <span>Education</span></h2>
 
-            <div class="about-card">
-                <h3>Education</h3>
-                <p>BS Software Engineering</p>
-                <p>Abasyn University Peshawar</p>
+                <p>My academic journey.</p>
+
             </div>
 
-            <div class="about-card">
-                <h3>Interests</h3>
-                <p>Web Development</p>
-                <p>Digital Marketing</p>
-                <p>Graphic Designing</p>
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <span class="timeline-dot"></span>
+
+                    <div class="timeline-card">
+
+                        <p class="timeline-label">CURRENT STUDIES</p>
+
+                        <h3>BS Software Engineering</h3>
+
+                        <p>Abasyn University Peshawar</p>
+
+                        <small>Currently Studying</small>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item">
+
+                    <span class="timeline-dot"></span>
+
+                    <div class="timeline-card">
+
+                        <p class="timeline-label">COMPLETED</p>
+
+                        <h3>FSc</h3>
+
+                        <p>City College Peshawar</p>
+
+                        <small>Completed</small>
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="about-card">
-                <h3>Personal Project</h3>
-                <p>Luxe Homes Real Estate Website</p>
-                <p>HTML, CSS & JavaScript</p>
+        </section>
+
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="section reveal">
+
+            <div class="section-heading">
+
+                <p class="section-tag">MY RECENT WORK</p>
+
+                <h2>Featured <span>Projects</span></h2>
+
+                <p>
+                    A selection of my personal and university projects.
+                </p>
+
             </div>
 
-        </div>
+            <div class="filter-buttons">
 
-    </div>
+                <button class="filter-btn active"
+                        data-filter="all">
+                    All Projects
+                </button>
 
-</section>
+                <button class="filter-btn"
+                        data-filter="web">
+                    Web Development
+                </button>
 
+                <button class="filter-btn"
+                        data-filter="software">
+                    Software
+                </button>
 
-    <!-- SKILLS SECTION -->
-   
-<!-- SKILLS SECTION -->
-<section id="skills">
+                <button class="filter-btn"
+                        data-filter="hardware">
+                    Hardware
+                </button>
 
-    <h2>My Professional Skills</h2>
-
-    <div class="skills-container">
-
-        <div class="skill-box">
-            <div class="skill-info">
-                <h3>HTML</h3>
-                <span>85%</span>
             </div>
-            <div class="skill-bar">
-                <div class="skill-progress html"></div>
+
+            <div class="projects-container">
+
+                <!-- PROJECT 1 -->
+                <article class="project" data-category="web">
+
+                    <img src="luxe-homes.jpg"
+                         alt="Luxe Homes Real Estate Website">
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            WEB DEVELOPMENT
+                        </span>
+
+                        <h3>Luxe Homes</h3>
+
+                        <p>
+                            A modern real estate website featuring
+                            property listings, filters and a
+                            responsive user interface.
+                        </p>
+
+                        <div class="tech-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <a href="https://sohailjan934113-stack.github.io/myhomewebsite/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="project-btn">
+                            View Project ↗
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 2 -->
+                <article class="project" data-category="hardware">
+
+                    <img src="automatic-fire-extinguisher.jpg"
+                         alt="Automatic Fire Extinguisher University Project">
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            UNIVERSITY PROJECT
+                        </span>
+
+                        <h3>Automatic Fire Extinguisher</h3>
+
+                        <p>
+                            A hardware-based university project
+                            developed as part of my
+                            Digital Logic Design course.
+                        </p>
+
+                        <div class="tech-tags">
+                            <span>DLD</span>
+                            <span>Hardware</span>
+                        </div>
+
+                        <a href="#contact" class="project-btn">
+                            Project Details ↗
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 3 -->
+                <article class="project" data-category="software">
+
+                    <img src="student-management.jpg"
+                         alt="Student Management System Project">
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            SOFTWARE PROJECT
+                        </span>
+
+                        <h3>Student Management System</h3>
+
+                        <p>
+                            A student management project designed
+                            to organize student records and
+                            academic information.
+                        </p>
+
+                        <div class="tech-tags">
+                            <span>Software</span>
+                            <span>Database</span>
+                        </div>
+
+                        <a href="#contact" class="project-btn">
+                            Project Details ↗
+                        </a>
+
+                    </div>
+
+                </article>
+
             </div>
-        </div>
 
-        <div class="skill-box">
-            <div class="skill-info">
-                <h3>CSS</h3>
-                <span>80%</span>
+        </section>
+
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section reveal">
+
+            <div class="section-heading">
+
+                <p class="section-tag">GET IN TOUCH</p>
+
+                <h2>Contact <span>Me</span></h2>
+
+                <p>
+                    Have a question or collaboration idea?
+                    Feel free to get in touch.
+                </p>
+
             </div>
-            <div class="skill-bar">
-                <div class="skill-progress css"></div>
+
+            <div class="contact-container">
+
+                <div class="contact-info">
+
+                    <h3>Let's Connect</h3>
+
+                    <p>
+                        I am interested in learning,
+                        collaboration and opportunities
+                        to grow through practical work.
+                    </p>
+
+                    <a href="mailto:sohailjan934113@gmail.com"
+                       class="contact-link">
+                        ✉ Email Me
+                    </a>
+
+                    <a href="https://github.com/sohailjan934113-stack"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="contact-link">
+                        ◈ GitHub Profile
+                    </a>
+
+                </div>
+
+
+                <!-- CONTACT FORM -->
+                <form class="contact-form"
+                      action="https://formsubmit.co/sohailjan934113@gmail.com"
+                      method="POST">
+
+                    <input type="hidden"
+                           name="_subject"
+                           value="New Portfolio Message">
+
+                    <input type="hidden"
+                           name="_template"
+                           value="table">
+
+                    <input type="text"
+                           name="name"
+                           placeholder="Your Name"
+                           autocomplete="name"
+                           required>
+
+                    <input type="email"
+                           name="email"
+                           placeholder="Your Email"
+                           autocomplete="email"
+                           required>
+
+                    <textarea name="message"
+                              placeholder="Write Your Message"
+                              rows="5"
+                              required></textarea>
+
+                    <button type="submit" class="btn">
+                        Send Message →
+                    </button>
+
+                </form>
+
             </div>
-        </div>
 
-        <div class="skill-box">
-            <div class="skill-info">
-                <h3>JavaScript</h3>
-                <span>65%</span>
-            </div>
-            <div class="skill-bar">
-                <div class="skill-progress javascript"></div>
-            </div>
-        </div>
+        </section>
 
-        <div class="skill-box">
-            <div class="skill-info">
-                <h3>Digital Marketing</h3>
-                <span>75%</span>
-            </div>
-            <div class="skill-bar">
-                <div class="skill-progress marketing"></div>
-            </div>
-        </div>
+    </main>
 
-        <div class="skill-box">
-            <div class="skill-info">
-                <h3>Graphic Designing</h3>
-                <span>70%</span>
-            </div>
-            <div class="skill-bar">
-                <div class="skill-progress designing"></div>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-    <!-- PROJECTS SECTION -->
-    <section id="projects">
-
-        <h2>My Projects</h2>
-
-        <!-- PROJECT 1 -->
-        <div class="project">
-
-            <img src="luxe-homes.jpg"
-                 alt="Luxe Homes Real Estate Website">
-
-            <h3>Luxe Homes</h3>
-
-            <p>
-                A modern Real Estate Website developed
-                using HTML, CSS and JavaScript.
-            </p>
-
-            <a href="https://sohailjan934113-stack.github.io/myhomewebsite/"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="project-btn">
-                View Project
-            </a>
-
-        </div>
-
-
-        <!-- PROJECT 2 -->
-        <div class="project">
-
-            <img src="automatic-fire-extinguisher.jpg"
-                 alt="Automatic Fire Extinguisher Project">
-
-            <h3>Automatic Fire Extinguisher</h3>
-
-            <p>
-                A university project developed as part
-                of my Digital Logic Design (DLD) course.
-            </p>
-
-            <a href="#contact" class="project-btn">
-                Project Details
-            </a>
-
-        </div>
-
-
-        <!-- PROJECT 3 -->
-        <div class="project">
-
-            <img src="student-management.jpg"
-                 alt="Student Management System">
-
-            <h3>Student Management System</h3>
-
-            <p>
-                A software project designed to manage
-                student records and academic information.
-            </p>
-
-            <a href="#contact" class="project-btn">
-                Project Details
-            </a>
-
-        </div>
-
-    </section>
-    
-<!-- CONTACT SECTION -->
-
-<section id="contact">
-
-    <h2>Contact Me</h2>
-
-    <p>Have a project or question? Send me a message!</p>
-
-    <form class="contact-form"
-          action="https://formsubmit.co/sohailjan934113@gmail.com"
-          method="POST">
-
-        <input type="text" name="name"
-               placeholder="Your Name" required>
-
-        <input type="email" name="email"
-               placeholder="Your Email" required>
-
-        <textarea name="message"
-                  placeholder="Your Message"
-                  rows="5" required></textarea>
-
-        <button type="submit" class="btn">
-            Send Message
-        </button>
-
-    </form>
-
-    <div class="social-links">
-        <a href="https://github.com/sohailjan934113-stack"
-           target="_blank"
-           rel="noopener noreferrer">GitHub</a>
-
-        <a href="mailto:sohailjan934113@gmail.com">
-            Email Me
-        </a>
-    </div>
-
-</section>
 
     <!-- FOOTER -->
     <footer>
-        <p>© 2026 Sohail Ahmad. All Rights Reserved.</p>
+
+        <a href="#home" class="footer-logo">
+            SOHAIL<span>.</span>
+        </a>
+
+        <p>
+            Turning ideas into digital experiences.
+        </p>
+
+        <p>
+            Building skills. Creating projects. Learning every day.
+        </p>
+
+        <p>
+            © <span id="currentYear"></span>
+            Sohail Ahmad. All Rights Reserved.
+        </p>
+
+        <a href="#home" class="footer-top">
+            Back to Home ↑
+        </a>
+
     </footer>
+
+
+    <!-- BACK TO TOP -->
+    <button id="backToTop"
+            type="button"
+            aria-label="Back to top">
+        ↑
+    </button>
 
 
     <!-- JAVASCRIPT -->
