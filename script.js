@@ -1,5 +1,4 @@
 
-
 document.addEventListener("DOMContentLoaded", function () {
 
     // 1. LOADING SCREEN
